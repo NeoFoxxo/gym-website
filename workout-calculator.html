@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css"> <!-- Font awesome icons -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="javascript/add-nav-and-footer.js" defer></script>
+        <script src="javascript/form.js" defer></script>
+        <script src="javascript/video.js" defer></script>
+        <script src="javascript/hamburger.js" defer></script>
+        <title>ML Strength - Health and Fitness</title>
+    </head>
+    <body>
+        <header id="header">
+            <section id="nav-placeholder"></section>
+        </header>
+        <video id="help-video" src="images/help-video.mp4" muted loop autoplay></video>
+        <section id="workout-calculator-section">
+            <h1>Workout Calculator</h1>
+            <article id="muscleresult" class="hidden result">
+                <h2>Your Workout Routine</h2>
+                <p>Start doing more intense weight lifting sessions and start following a protein rich diet, making sure you get 300 grams of protein each day.</p>
+            </article>
+            <article id="fatresult" class="hidden result">
+                <h2>Your Workout Routine</h2>
+                <p>Start yourself on a Keto diet and start running 1km everyday.</p>
+            </article>
+            <article id="milresult" class="hidden result">
+                <h2>Your Workout Routine</h2>
+                <p>Make sure you have good upper body strength and good endurance. Start running 3km every day and do 60 pushups everyday.</p>
+            </article>
+            <form action="#" onsubmit="addArticle(); return false" method="GET" id="calculator">
+                <div class="form-section">
+                    <div class="input-icons">
+                        <label for="email">Email:</label>
+                        <span class="fa fa-envelope icon"></span>
+                        <input type="email" placeholder="example@email.com" name="email" id="email" maxlength="30" required oninvalid="this.setCustomValidity('Please enter your Email address')" oninput="this.setCustomValidity('')">
+                    </div>
+                </div> <!-- end of form-section -->
+                <div class="form-section">
+                    <div class="input-icons">
+                        <label for="age">Age:</label>
+                        <span id="age-icon" class="fa-solid fa-image-portrait"></span>
+                        <input type="number" name="age" id="age" min="10" max="99" placeholder="Age" required oninvalid="this.setCustomValidity('Please enter your age')" oninput="this.setCustomValidity('')">
+                    </div>
+                </div> <!-- end of form-section -->
+                <div class="form-section">
+                    <div class="input-icons">
+                        <label for="weight">Weight:</label>
+                        <span id="weight-icon" class="fa-solid fa-weight-hanging"></span>
+                        <input type="number" name="weight" id="weight" min="20" max="300" placeholder="kg" required oninvalid="this.setCustomValidity('Please enter your weight')" oninput="this.setCustomValidity('')">
+                    </div>
+                </div> <!-- end of form-section -->
+                <div class="form-section">
+                    <fieldset>
+                        <legend class="legend-style">Gender:</legend>
+                        <input type="radio" id="male" name="gender" class="radio-button" value="male" required>
+                        <label for="male" class="radio">Male</label>
+                        <input type="radio" id="female" name="gender" class="radio-button" value="female" required>
+                        <label for="female" class="radio">Female</label>
+                        <input type="radio" id="none" name="gender" value="none" class="radio-button" required>
+                        <label for="none" class="radio">Rather Not Say</label>
+                    </fieldset>
+                </div> <!-- end of form-section -->
+                <div class="form-section">
+                    <fieldset>
+                        <legend class="legend-style">What is your primary fitness goal?</legend>
+                        <input type="radio" id="muscle-gain" name="fit-goal" class="radio-button" value="muscle-gain" required>
+                        <label for="muscle-gain" class="radio">Muscle Gain</label>
+                        <input type="radio" id="fat-loss" name="fit-goal" class="radio-button" value="fat-loss" required>
+                        <label for="fat-loss" class="radio">Fat Loss</label>
+                        <input type="radio" id="military-training" class="radio-button" name="fit-goal" value="military-training" required>
+                        <label for="military-training" class="radio">Military Training</label>
+                    </fieldset>
+                </div> <!-- end of form-section -->
+                <div id="medical" class="form-section">
+                    <label for="medical-condition" class="radio" id="medical-conditions-text">Do you have any medical conditions?</label>
+                    <input type="checkbox" id="medical-condition" value="medical-condition">
+                </div>
+                <div class="form-section">
+                    <label for="how-often" class="radio" id="how-often-text">How often do you exercise?</label>
+                    <select name="how-often" id="how-often" required>
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="1">Once a Week</option>
+                        <option value="2">Twice a Week</option>
+                        <option value="3">Three Days a Week</option>
+                        <option value="4">Four Days a Week</option>
+                        <option value="5">Five Days a Week</option>
+                        <option value="6">Six Days a Week</option>
+                        <option value="7">Every Day</option>
+                    </select>
+                </div> <!-- end of form-section -->
+                <div class="form-section">
+                    <input id="submit-button" class="form-button" type="submit" value="Calculate">
+                    <input class="form-button" type="reset" value="Reset">
+                    <a class="form-button" id="help-video-button">Help</a>
+                </div> <!-- end of form-section -->
+            </form>
+            <button id="try-again" class="hidden" onclick="document.location.reload(true)">Try Again</button>
+            <footer id="footer-placeholder"></footer>
+        </section>
+    </body>
+</html>

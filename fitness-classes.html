@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="javascript/add-nav-and-footer.js" defer></script>
+        <script src="javascript/hamburger.js" defer></script>
+        <script src="javascript/fitness-class-accordion.js" defer></script>
+        <script src="javascript/back-to-top-arrow.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font awesome icons -->
+        <title>ML Strength - Health and Fitness</title>
+    </head>
+    <body>
+        <header id="header">
+            <section id="nav-placeholder"></section>
+        </header>
+        <form id="button-container" action="#top">
+            <button id="back-to-top" title="Go to top">
+                <span class="fa fa-arrow-up"></span> <!-- Font awesome arrow icon -->
+            </button>
+        </form>
+        <section id="services-section">
+            <h1>Our Fitness Classes</h1>
+            <img id="man-boxing-img" src="images/fitness-classes.jpg" alt="man boxing with a woman">
+            <p>We are open 24:7. YOU can now train any time you like, weekdays, weekends & public holidays. Unlike other so called 24:7 gyms, we are staffed all the time. If you need a late night workout, a protein bar or shake, supplements or a cool t-shirt, we are open for you. The range of group fitness classes provided by ML Strength is listed below. </p>
+            <section id="fitness-classes" class="fitness-buttons">
+                <article class="button-item">
+                    <a id="body-attack-button" class="item-name" onclick="showBodyAttack()" href="#body-attack">Body Attack</a>
+                </article>
+                <article class="button-item">
+                    <a id="zumba-button" class="item-name" onclick="showZumba()" href="#zumba">Zumba</a>
+                </article>
+                <article class="button-item">
+                    <a id="body-pump-button" class="item-name" onclick="showBodyPump()" href="#body-pump">Body Pump</a>
+                </article>
+                <article class="button-item">
+                    <a id="body-step-button" class="item-name" onclick="showBodyStep()" href="#body-step">Body Step</a>
+                </article>
+                <article class="button-item">
+                    <a id="yoga-button" class="item-name" onclick="showYoga()" href="#yoga">Yoga</a>
+                </article>
+                <article class="button-item">
+                    <a id="pilates-button" class="item-name" onclick="showPilates()" href="#pilates">Pilates</a>
+                </article>
+            </section>
+            <aside id="body-attack" class="fitness-option">
+                <h2>Body Attack</h2>
+                <h3>Classes every week on Monday</h3>
+                <img src="images/body-attack.jpg" alt="man lifing a weight">
+                <p>Body Attack is a commercial group-fitness sports inspired cardio workout program including some sports-derived movements, aimed primarily at developing cardiovascular fitness. The program is created and distributed by Les Mills International. There is a release with new music and movements every three months.</p>
+            </aside>
+            <aside id="zumba" class="fitness-option">
+                <h2>Zumba</h2>
+                <h3>Classes every week on Tuesday</h3>
+                <img src="images/zumba.jpg" alt="multiple people doing zumba exercises">
+                <p>Zumba is a cardio-based workout that also incorporates dancing moves with Latin influences. Beto Pérez, a dancer and choreographer from Colombia, started it in 2001; by 2012, it had 110,000 sites and 12 million weekly students. The trademark Zumba belongs to Zumba Fitness, LLC.</p>
+            </aside>
+            <aside id="body-pump" class="fitness-option">
+                <h2>Body Pump</h2>
+                <h3>Classes every week on Wednesday</h3>
+                <img src="images/body-pump.jpg" alt="man working out in gym">
+                <p>Body Pump is a fast-paced, barbell-based workout that's specifically designed to help you get lean, toned and fit. It uses a combination of motivating music, fantastic instructors and scientifically proven moves to help you achieve these targets more quickly than you would working out on your own.</p>
+            </aside>
+            <aside id="body-step" class="fitness-option">
+                <h2>Body Step</h2>
+                <h3>Classes every week on Thursday</h3>
+                <img src="images/body-step.jpg" alt="man running on road">
+                <p>Body Step is a fun pre-choreographed full body cardio workout, using a step to help tone your thighs. Your bubbly and approachable instructor will coach you through the workout, with motivating hit music and a whole lot of fun! Leave this class buzzing with satisfaction.</p>
+            </aside>
+            <aside id="yoga" class="fitness-option">
+                <h2>Yoga</h2>
+                <h3>Classes every week on Friday</h3>
+                <img src="images/yoga.jpg" alt="woman doing yoga">
+                <p>Yoga cultivates health and wellbeing (physical, emotional, mental and social) through the regular practice of a range of many different techniques, including postures and movement, breath awareness and breathing exercises, relaxation and concentration, self-inquiry and meditation.</p>
+            </aside>
+            <aside id="pilates" class="fitness-option">
+                <h2>Pilates</h2>
+                <h3>Classes every week on Saturday</h3>
+                <img src="images/pilates.jpg" alt="woman doing pilates exercises">
+                <p>Pilates is a form of exercise which concentrates on strengthening the body with an emphasis on core strength. This helps to improve general fitness and overall well-being. Similar to Yoga, Pilates concentrates on posture, balance and flexibility.</p>
+            </aside>
+            <footer id="footer-placeholder"></footer>
+        </section> <!-- End of services section -->
+    </body>
+</html>

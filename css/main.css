@@ -1,0 +1,980 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  height: 70px;
+  background-color: #2d3142;
+  font-size: 1.2rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+body {
+  color: #ffff;
+}
+
+.logo {
+  position: relative;
+  height: 100%;
+}
+
+h1 {
+  font-size: 7em;
+  font-weight: 800;
+  line-height: 1em;
+}
+
+h3 {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+p, .form-section {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: center;
+  width: 47%;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+a {
+  color: #ffff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+nav a {
+  font-weight: 500;
+}
+
+nav a:hover {
+  opacity: 1;
+  -webkit-box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.05);
+          box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.05);
+}
+
+nav a::before {
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  height: 2.5px;
+  content: "";
+  position: absolute;
+  background-color: #ef8354;
+  width: 0%;
+  bottom: 0px;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1 ;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+aside {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 5%;
+}
+
+aside:last-child {
+  overflow: visible;
+}
+
+.left {
+  float: left;
+  margin-right: 1.5em;
+}
+
+.right {
+  float: right;
+  margin-left: 1em;
+}
+
+#button-container {
+  padding: 0%;
+  margin: 0%;
+}
+
+#home-section {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+#services-section, #about-section, #contact-section {
+  display: block;
+  text-align: center;
+  margin: 0%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  min-height: 92.6vh; 
+  background: rgb(45,49,66);
+  background: -o-linear-gradient(317deg, rgba(195,113,80,1) 0%, rgba(51,52,67,1) 26%, rgba(45,49,66,1) 74%, rgba(195,113,80,1) 100%, rgba(219,123,82,1) 100%, rgba(194,112,80,1) 100%, rgba(239,131,84,1) 100%);
+  background: linear-gradient(133deg, rgba(195,113,80,1) 0%, rgba(51,52,67,1) 26%, rgba(45,49,66,1) 74%, rgba(195,113,80,1) 100%, rgba(219,123,82,1) 100%, rgba(194,112,80,1) 100%, rgba(239,131,84,1) 100%);
+}
+
+#contact-section {
+  margin-bottom: -20%;
+}
+
+#services-section h1, #about-section h1, #contact-section h1 {
+  margin-top: -3%;
+}
+
+#services-section p , #about-section p, aside p {
+  width: auto;
+  margin: 2% 20%;
+  margin-bottom: 1%;
+}
+
+#services-section img {
+  margin-top: 2%;
+  -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,0.6);
+          box-shadow: 0px 0px 30px rgba(0,0,0,0.6);
+}
+
+#about-section, #contact-section {
+  padding: 10%;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+
+#about-section h2, #contact-section h2 {
+  margin-top: 6%;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+
+#about-section h2:nth-last-of-type(1) {
+  margin-top: 10%;
+}
+
+#about-section img {
+  margin-top: 3.4%;
+  -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,0.9);
+          box-shadow: 0px 0px 30px rgba(0,0,0,0.9);
+}
+
+#about-section img:nth-last-of-type(1) {
+  width: 40%;
+  border-radius: 1%;
+}
+
+#workout-calculator-section {
+  display: block;
+  padding-top: 2%;
+  text-align: center;
+  margin: 0%;
+  min-height: 92.6vh; 
+  background: -o-linear-gradient(317deg, rgba(195,113,80,1) 0%, rgba(51,52,67,1) 26%, rgba(45,49,66,1) 74%, rgba(195,113,80,1) 100%, rgba(219,123,82,1) 100%, rgba(194,112,80,1) 100%, rgba(239,131,84,1) 100%); 
+  background: linear-gradient(133deg, rgba(195,113,80,1) 0%, rgba(51,52,67,1) 26%, rgba(45,49,66,1) 74%, rgba(195,113,80,1) 100%, rgba(219,123,82,1) 100%, rgba(194,112,80,1) 100%, rgba(239,131,84,1) 100%);
+}
+
+#contact-section h2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.mobile-h3 {
+  display: none;
+}
+
+#back-to-top {
+  display: none; /* make button invisible by default */
+  position: fixed;
+  z-index: 99;  /* make sure it is on top of other elements */
+  bottom: 20px;
+  right: 20px;
+  border: 2px #000 solid;
+  background-color: #b6542a;
+  cursor: pointer;
+  font-size: xx-large;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.branch h3 {
+  margin-right: 40%;
+  font-size: 1.6em;
+}
+
+#google-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact-text {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+.gym-image {
+  width: 40%;
+  padding-bottom: 10%;
+  margin-left: 50%;
+  margin-top: -1.5%;
+}
+
+
+#contact-details {
+  margin-top: 0%;
+  margin-right: 70%;
+  width: 50%;
+}
+
+.branch p {
+  text-align: center;
+  margin-top: -10%;
+  margin-left: 58%;
+  width: 35%;
+}
+
+#gym-photo {
+  width: 100%;
+  margin-left: 50%;
+  margin-top: -24%;
+  margin-right: 0%;
+}
+
+table {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: start;
+  margin-left: 19%;
+  margin-top: -29%;
+}
+
+form {
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	margin: 0% 25%;
+  position: relative;
+  display: block;
+}
+
+form input {
+  padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: auto;
+	font-size: 13px;
+}
+
+#email, #age, #weight {
+  padding-left: 7.5%;
+}
+
+#age, #weight {
+  width: 200px;
+}
+
+#weight-icon, #age-icon {
+  z-index: 20;
+  margin-left: 5px;
+  color: #000;
+}
+
+.legend-style {
+  font-weight: 500;
+  margin-bottom: -1% ;
+}
+
+.form-section {
+	border-radius: 10px;
+	padding: 20px 30px;
+	margin: 0% 25%;
+  width: auto;
+}
+
+#calculator p, .form-section {
+  margin-left: 25%;
+  margin-top: 0.5%;
+}
+
+.icon {
+  padding-left: 0px;			/* Set the padding around the icon */
+  min-width: 40px;		/* Set the minimum width for the icon */
+  color: #000;			/* Set a color for the icon */
+}
+
+.input-icons {
+  margin-left: -1%;
+  padding: 0%;
+  width: 100%;			/* Set the icon container width */
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.input-icons span {
+  margin-left: -0.3%;
+  margin-top: 1%;
+  position: absolute;		/* Set an absolute position for the icon */
+}
+
+.form-button {
+  font-size: 1em;
+  background: #ef8354;
+  padding: 10px;
+  width: 32%;
+  margin-left: 4%;
+  margin-top: 20px;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.active-block {
+  display: block;
+}
+
+.form-button:hover {
+  background-color: rgba(195,113,80,1);
+  cursor: pointer;
+}
+
+input {
+  width: 5%;
+  border: none;
+  padding-left: 10px;
+}
+
+input:invalid:focus {
+  border: 2px solid red;
+  -webkit-box-shadow: 0 0 2px red;
+          box-shadow: 0 0 2px red;
+  outline: red;
+}
+
+input:valid:focus {
+  border: 2px solid green;
+  -webkit-box-shadow: 0 0 2px green;
+          box-shadow: 0 0 2px green;
+  outline: green;
+}
+
+#try-again {
+  margin-left: -1%;
+}
+
+article {
+  padding-top: 2%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+} 
+
+article p {
+  width: 100%;
+}
+
+section a {
+  font-size: 1.2em;
+  text-align: center;
+  background: #b6542a;
+  padding: 10px 20px;
+  width: 19%;
+  margin-left: 14%;
+  margin-top: 20px;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+/* create line transition on services button */
+section a:before, section a:after {
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:3px;
+  width:0;
+  background: #000;
+  -webkit-transition:400ms ease all;
+  -o-transition:400ms ease all;
+  transition:400ms ease all; /* don't cut off animation when mouse leaves */
+}
+
+/* hide hamburger */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* style hamburger bars */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+/* add another transition line at the bottom of the services button */
+section a:after { 
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+/* slow down transition */
+section a:hover:before, section a:hover:after {
+  width:100%;
+  -webkit-transition:800ms ease all;
+  -o-transition:800ms ease all;
+  transition:800ms ease all;
+}
+
+#fitness-classes, #gym-locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fitness-buttons {
+  margin-left: 28%;
+}
+.contact-buttons  {
+  gap: 1%;
+  margin-left: 23%;
+}
+
+.button-item {
+  padding: 2%;
+  margin-left: 1%;
+  width: 10%;
+  margin-top: 1%; 
+}
+
+.button-item a {
+  font-weight: 1;
+  margin: 0%;
+  padding: 8%;
+  width: 120px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#help-video-button {
+  margin-top: 5%;
+  color: #000;
+}
+
+#help-video {
+  display: none;
+  width: 80%;
+  height: 80%;
+  margin-top: 13%;
+  margin-left: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 9997;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Style the accordion panel which is hidden by default */
+.panel {
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.fitness-option {
+  margin-top: 20px;
+  display: none;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+  scroll-behavior: smooth;
+  line-height: 3em;
+  width: auto;
+  margin-left: 2%;
+}
+
+/* Custom animation to fade in elements */
+@-webkit-keyframes fadeIn {
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+  opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+}
+
+.fitness-option h2 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 30%;
+}
+
+.fitness-option img {
+  margin-top: 20px;
+  width: 30%;
+  height: auto;
+}
+
+/* style footer */
+footer {
+  position: sticky;
+  text-align: center;
+  font-size: 1.0rem;
+  padding-top: 14%;
+  background-color: transparent ;
+}
+
+section footer {
+  padding-top: 0%;
+  padding: 1%;
+}
+
+#about-section footer {
+  margin-top: 7%;
+}
+
+/* Style for mobile */
+@media(max-width: 1100px) {
+
+    #home-section p {
+      margin-left: 0;
+      width: 100%;
+      margin-left: -2%;
+    }
+
+    #services-section {
+      padding-bottom: 15%;
+    }
+
+    #services-section h1, h1 {
+      font-size: 6vh;
+      text-align: center;
+      margin-top: 20px;
+      margin-left: 0%;
+      width: 100%;
+    }
+
+    #about-section h1 {
+      font-size: 8vh;
+      margin-bottom: 15%;
+    }
+
+    #about-section h2 {
+      font-size: 5vh;
+    }
+
+    #services-section p {
+      width: 90%;
+      margin-left: 5%;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+    }
+
+    article {
+      width: 100%;
+    }
+
+    aside {
+      width: 120%;
+      margin-left: -10%;
+    }
+    
+    .about-aside {
+      width: 100%;
+      margin-left: 0%;
+    }
+    #about-section img {
+      width: 96%;
+      height: auto;
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+    #about-section img:nth-last-of-type(1) {
+      width: 96%;
+      height: auto;
+    }
+
+    #fitness-classes, #gym-locations {
+      margin-left: 0%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+
+    #fitness-section2 {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-left: 50%;
+      margin-top: -25.5%;
+      padding: 0%;
+      width: 50%;
+      margin-right: 0;
+    }
+    
+    /* remove section not required in form for mobile */
+    #medical {
+      display: none;
+    }
+
+    /* style video overlay for mobile */
+    #help-video {
+      margin-top: 180%;
+      width: 95%;
+      margin-left: 2.6%;
+      position: absolute;
+      z-index: 40;
+    }
+
+    form {
+      width: 100%;
+      margin: 0%;
+      -webkit-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    form label {
+      display: none;
+    }
+
+    /* adjust form inputs for mobile */
+    #age, #weight, #email {
+      width: 110%;
+      margin-left: -5%;
+      padding-left: 15%;
+    }
+
+    .form-section {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+
+    /* position icons for mobile */
+    .input-icons span {
+      margin-top: 2.2%;
+      margin-left: -2%;
+    }
+
+    #calculator p, .form-section {
+      width: 100%;
+      margin-left: 0%;
+      margin: 0%;
+      padding-right: 0%;
+    }
+    
+    #gender-select {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    
+    /* move radio buttons together on mobile */
+    .radio-button {
+      margin-top: 20px;
+      margin-left: 50%;
+    }
+
+    #medical-conditions-text, #how-often-text {
+      margin-top: 0.5%;
+    }
+
+    #how-often-text {
+      margin-left: 7%;
+    }
+
+    /* make help button bigger for mobile */
+    #help-video-button {
+      margin-top: 2%;
+      padding: 5%;
+    }
+
+    .radio {
+      margin-top: -50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 5%;
+      margin-left: 0%;
+    }
+
+    .result {
+      margin-top: 20%;
+    }
+
+    .fitness-option {
+      margin-top: 10%;
+    }
+
+    .fitness-option img {
+      margin-top: 20px;
+      width: 80%;
+      height: auto;
+    }
+
+    #man-boxing-img {
+      width: 89%;
+      margin-top: 5%;
+    }
+
+    .button-item {
+      font-size: 0.7rem;
+      width: 50%;
+      padding-bottom: 0%;
+      margin-left: 25%;
+      margin-right: 0;
+    }
+
+    .nav-link:hover::before {
+      width: 85%;
+    }
+
+    nav ul {
+      position: absolute;
+      left: -100%;
+      top: 69px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      background-color: #2d3142;
+      gap: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+      z-index: 2000;
+    }
+
+    ul li{
+      margin: 5px 0;
+    }
+
+    nav ul.active {
+      left: 0;
+    }
+
+    nav {
+      margin-right: 10px;
+      padding: 10px;
+    }
+
+    nav a {
+      display: block;
+      padding: 8px 16px;
+    }
+
+    section a {
+      margin-top: 50px;
+      width: 70%;
+      margin-left: 15%;
+    }
+
+    .hamburger {                /* Display hamburger when screen reaches certain size */
+      display: block;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+      -webkit-transform: translateY(8px) rotate(45deg);
+          -ms-transform: translateY(8px) rotate(45deg);
+              transform: translateY(8px) rotate(45deg);  /* Turn hamburger into an X when clicked */
+    }
+
+    .hamburger.active .bar:nth-child(2){ /* Turn hamburger into an X when clicked */
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3){
+      -webkit-transform: translateY(-8px) rotate(-45deg);
+          -ms-transform: translateY(-8px) rotate(-45deg);
+              transform: translateY(-8px) rotate(-45deg); /* Turn hamburger into an X when clicked */
+    }
+
+    .contact-buttons a {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+
+    .branch img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 0%;
+    }
+
+    #workout-calculator-section {
+      background-position: 30%;
+    }
+
+    .branch p {
+      width: 100%;
+      margin-bottom: 20%;
+      margin-left: 0%;
+    }
+
+    .mobile-h3 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      font-size: 190%;
+      margin-bottom: 5%;
+      font-weight: 600;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+
+    .branch h3 {
+      display: none;
+    }
+
+    table {
+      font-size: 100%;
+      padding-bottom: 0;
+      margin: 0;
+    }
+
+    footer {
+      padding: 20px;
+      padding-bottom: 0%;
+    }
+}
