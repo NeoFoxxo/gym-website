@@ -4,6 +4,7 @@ This is a website created for a fictional gym company. It was built with vanilla
 <br><br> It was built for one of my assessments.
 
 ## Features
+* Responsive with mobile support 📱
 * Fully functional workout calculator 🙀
 * Cool animations 🤩
 * Modern design 😎
