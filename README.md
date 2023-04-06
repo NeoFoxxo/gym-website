@@ -11,10 +11,10 @@ This is a website created for a fictional gym company. It was built with vanilla
 ## Screenshots
 
 ### Home Page
-![Home Page](https://github.com/NeoFoxxo/gym-website/blob/master/gym-ss1)
+![Home Page](https://github.com/NeoFoxxo/gym-website/blob/master/gym-ss1.png)
 
 ### Workout Calculator
-![Home Page](https://github.com/NeoFoxxo/gym-website/blob/master/gym-ss2)
+![Home Page](https://github.com/NeoFoxxo/gym-website/blob/master/gym-ss2.png)
 
 ### Fitness Classes
-![Home Page](https://github.com/NeoFoxxo/gym-website/blob/master/gym-ss3)
+![Home Page](https://github.com/NeoFoxxo/gym-website/blob/master/gym-ss3.png)
