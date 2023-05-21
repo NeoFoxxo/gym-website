@@ -1,6 +1,6 @@
 # Gym Website
 
-This is a website created for a fictional gym company. It was built with vanilla HTML, CSS, Javascript and a but of jQuery.
+This is a website created for a fictional gym company. It was built with vanilla HTML, CSS, Javascript and a bit of jQuery.
 <br><br> It was built for one of my assessments.
 
 ## Features
